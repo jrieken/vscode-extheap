@@ -1,0 +1,36 @@
+{
+	"name": "vscode-extheap",
+	"displayName": "vscode-extheap",
+	"description": "Monitors the heap usage of the extension host process",
+	"version": "0.0.1",
+	"publisher": "jrieken",
+	"engines": {
+		"vscode": "^0.10.6"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [{
+			"command": "gc.showStats",
+			"title": "Show GC Stats"
+		}, {
+			"command": "gc.dumpHeap",
+			"title": "Take heap snapshot"
+		}]
+	},
+    "scripts": {
+
+	},
+	"devDependencies": {
+		"vscode": "^0.10.6"
+	},
+	"dependencies": {
+		"gc-stats": "*",
+		"heapdump": "*"
+	}
+}

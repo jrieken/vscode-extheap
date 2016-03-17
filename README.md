@@ -1,13 +1,20 @@
-# README
-## This is the README for your extension "vscode-extheap" 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+## Monitor the heap usage on the extension host process
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+Adds an output channel which prints information about garbage collection.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-** Enjoy!**
+## Install
+
+### Option 1
+
+1. in the terminal navigate to the extension directory, like `cd ~/.vscode/extensions`
+2. clone this repo into that folder with `git clone https://github.com/jrieken/vscode-extheap.git`
+3. install dependencies with `cd vscode-extheap && npm install`
+
+
+### Option 2
+
+1. clone repo with `git clone https://github.com/jrieken/vscode-extheap.git`
+2. install dependencies with `cd vscode-extheap && npm install`
+3. package the extension with `vsce package`
+4. open the vsix with VS and follow the instructions
